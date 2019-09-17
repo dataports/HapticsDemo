@@ -14,7 +14,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    let impact = UIImpactFeedbackGenerator()
 
-
+    @IBAction func impactPressed(_ sender: Any) {
+        impact.impactOccurred()
+    }
+    
+    let selection = UISelectionFeedbackGenerator()
+    
+    @IBAction func selectionFeedback(_ sender: Any) {
+        selection.selectionChanged()
+    }
 }
 
