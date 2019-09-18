@@ -52,6 +52,6 @@ class ViewController: UIViewController {
         notification.notificationOccurred(.error)
     }
     
-    //You can also create custom haptics! Check out UIFeedbackGenerator!
+    //You can also create custom haptics! Check out CoreHaptics https://developer.apple.com/documentation/corehaptics
 }
 
