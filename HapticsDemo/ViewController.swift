@@ -53,5 +53,6 @@ class ViewController: UIViewController {
     }
     
     //You can also create custom haptics! Check out CoreHaptics https://developer.apple.com/documentation/corehaptics
+    //Custom haptics can be used to make continuous vibrations, etc. (Think of a PS4 controller)
 }
 
