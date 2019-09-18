@@ -34,26 +34,78 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KpU-6g-bYx">
-                                <rect key="frame" x="64" y="307" width="80" height="30"/>
+                                <rect key="frame" x="64" y="307" width="85" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.37984213234451403" blue="0.99776412828374705" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="4UU-qC-sMg"/>
-                                    <constraint firstAttribute="width" constant="80" id="TMo-mw-n6H"/>
+                                    <constraint firstAttribute="width" constant="85" id="TMo-mw-n6H"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <state key="normal" title="Selection">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="selectionFeedback:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qCf-iD-BYB"/>
+                                    <action selector="selectionPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pL0-y9-3hi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nsr-Pe-dBy">
+                                <rect key="frame" x="60" y="364" width="200" height="33"/>
+                                <color key="backgroundColor" red="0.63825043462415998" green="0.52752421213837264" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="cUe-Gu-bI5"/>
+                                    <constraint firstAttribute="height" constant="33" id="jhz-Wd-8nZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <state key="normal" title="Success Notification">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="successPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bxz-nZ-mrR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ko6-6H-CMO">
+                                <rect key="frame" x="60" y="417" width="200" height="30"/>
+                                <color key="backgroundColor" red="0.3669025273811295" green="0.35538812567878264" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="OsJ-un-KGS"/>
+                                    <constraint firstAttribute="height" constant="30" id="hsY-A7-XdM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <state key="normal" title="Warning Notification">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="warningPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lWG-3r-adw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6UA-7l-Ymr">
+                                <rect key="frame" x="60" y="467" width="200" height="30"/>
+                                <color key="backgroundColor" red="0.15352181686749056" green="0.63909520064360903" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="O2f-va-P4m"/>
+                                    <constraint firstAttribute="height" constant="30" id="yFE-cd-ohd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <state key="normal" title="Error Notification">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="errorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bcP-13-oJh"/>
+                                    <action selector="warningPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JqH-O6-MDi"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6UA-7l-Ymr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="2KJ-jg-tJN"/>
                             <constraint firstItem="BC2-mX-BtT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="201" id="49Z-D6-3Oq"/>
                             <constraint firstItem="KpU-6g-bYx" firstAttribute="top" secondItem="BC2-mX-BtT" secondAttribute="bottom" constant="32" id="4Ra-de-gdd"/>
                             <constraint firstItem="KpU-6g-bYx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="879-f0-elZ"/>
+                            <constraint firstItem="Nsr-Pe-dBy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="G0a-df-jsX"/>
+                            <constraint firstItem="6UA-7l-Ymr" firstAttribute="top" secondItem="Ko6-6H-CMO" secondAttribute="bottom" constant="20" id="Iil-lO-FjO"/>
+                            <constraint firstItem="Ko6-6H-CMO" firstAttribute="top" secondItem="Nsr-Pe-dBy" secondAttribute="bottom" constant="20" id="Ucg-TD-oq2"/>
+                            <constraint firstItem="Nsr-Pe-dBy" firstAttribute="top" secondItem="KpU-6g-bYx" secondAttribute="bottom" constant="27" id="VIS-fI-9vC"/>
+                            <constraint firstItem="Ko6-6H-CMO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="ngq-jp-hLW"/>
                             <constraint firstItem="BC2-mX-BtT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="urU-RN-cUw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

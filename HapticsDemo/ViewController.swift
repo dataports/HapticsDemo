@@ -16,6 +16,15 @@ class ViewController: UIViewController {
     }
     
     let impact = UIImpactFeedbackGenerator()
+    
+    //there's three impact styles
+//    let impact = UIImpactFeedbackGenerator(style: .light)
+    
+//    let impact = UIImpactFeedbackGenerator(style: .medium)
+    
+//    let impact = UIImpactFeedbackGenerator(style: .heavy)
+    
+    /*Apple uses light impact everytime you get a message in the Messages app*/
 
     @IBAction func impactPressed(_ sender: Any) {
         impact.impactOccurred()
@@ -23,8 +32,26 @@ class ViewController: UIViewController {
     
     let selection = UISelectionFeedbackGenerator()
     
-    @IBAction func selectionFeedback(_ sender: Any) {
+    //selection haptics are used for toggling switches, quite a light feeling compared to the others in the demo
+    
+    @IBAction func selectionPressed(_ sender: Any) {
         selection.selectionChanged()
     }
+    
+    // This would be the most realistic and relevant for our app. Could be used for ticket submission, warnings, etc.
+    let notification = UINotificationFeedbackGenerator()
+    
+    @IBAction func successPressed(_ sender: Any) {
+        notification.notificationOccurred(.success)
+    }
+    
+    @IBAction func warningPressed(_ sender: Any) {
+        notification.notificationOccurred(.warning)
+    }
+    @IBAction func errorPressed(_ sender: Any) {
+        notification.notificationOccurred(.error)
+    }
+    
+    //You can also create custom haptics! Check out UIFeedbackGenerator!
 }
 
